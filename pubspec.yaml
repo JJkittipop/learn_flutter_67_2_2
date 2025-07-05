@@ -36,6 +36,12 @@ dependencies:
   cupertino_icons: ^1.0.8
   flutter_launcher_icons: ^0.14.4
   flutter_spinkit: ^5.2.1
+  # Step3: Chek internet
+  connectivity_plus: ^6.1.4
+  #Step 4: Show toast message
+  fluttertoast: ^8.2.12
+  firebase_core: ^3.15.1
+  cloud_firestore: ^5.6.11
 
 dev_dependencies:
   flutter_test:
@@ -52,11 +58,12 @@ dev_dependencies:
 flutter_launcher_icons:
   android: "launcher_icon"
   ios: true
-  Remove_alpha.ios: true
-  image_path: "./android/assets/icon/1661150105747.jpg"
+  remove_alpha_ios: true
+  image_path: "./android/assets/icon/logo.jpg"
   min_sdk_android: 28
   adaptive_icon_background: "#FFFFFF"
-  adaptive_icon_foreground: "./android/assets/icon/1661150105747.jpg"
+  adaptive_icon_foreground: "./android/assets/icon/logo.jpg"
+
 
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec
@@ -75,7 +82,8 @@ flutter:
   #   - images/a_dot_ham.jpeg
   assets:
     - ./android/assets/images/
-    - ./android/assets/images/app_screen.jpg
+    - ./android/assets/images/cartoon.jpg
+
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/to/resolution-aware-images
